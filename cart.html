@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bag | Woodland</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+
+    <!-- ================= MOBILE NAVIGATION ================= -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+    <aside class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="products.html" class="mobile-nav-link">Sneakers</a>
+            <a href="index.html#story" class="mobile-nav-link">Our Story</a>
+            <a href="index.html#explore" class="mobile-nav-link">Explore</a>
+            <a href="cart.html" class="mobile-nav-link active">Your Bag</a>
+            <a href="payment.html" class="mobile-nav-link">Checkout</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <p>Woodland Footwear · Est. 1992</p>
+        </div>
+    </aside>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">W</span>
+            <span class="brand-name">WOODLAND</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="products.html">SNEAKERS</a>
+            <a href="index.html#story">OUR STORY</a>
+            <a href="index.html#explore">EXPLORE</a>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="products.html" class="cart-link">
+                CONTINUE SHOPPING
+            </a>
+
+            <span class="cart-link">
+                BAG <span id="cart-count">0</span>
+            </span>
+
+            <button class="menu-button" id="menuButton" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- CART HERO -->
+        <section class="cart-hero">
+            <div class="cart-number">
+                03 / YOUR BAG
+            </div>
+
+            <div>
+                <p class="section-label">YOUR SELECTION</p>
+                <h1>
+                    YOUR<br>
+                    <span>JOURNEY.</span>
+                </h1>
+            </div>
+        </section>
+
+        <!-- CART SECTION -->
+        <section class="cart-section">
+
+            <!-- ITEMS AREA -->
+            <div class="cart-items-area">
+                <div class="cart-topbar">
+                    <span>YOUR PRODUCTS</span>
+                    <span id="cart-item-count">0 ITEMS</span>
+                </div>
+
+                <div id="cart-items">
+                    <!-- JavaScript dynamically inserts cart items with product thumbnails here -->
+                </div>
+
+                <!-- EMPTY CART STATE -->
+                <div id="empty-cart" class="empty-cart">
+                    <div class="empty-symbol">∅</div>
+                    <h2>
+                        YOUR BAG IS<br>
+                        <span>EMPTY.</span>
+                    </h2>
+                    <p>Your next adventure is waiting. Add a pair to start your journey.</p>
+                    <a href="products.html" class="hero-button">
+                        <span>EXPLORE SNEAKERS</span>
+                        <span class="button-arrow">↗</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ORDER SUMMARY -->
+            <aside class="cart-summary">
+                <p class="section-label">ORDER SUMMARY</p>
+                <h2>
+                    YOUR<br>
+                    TOTAL
+                </h2>
+
+                <div class="summary-line">
+                    <span>Subtotal</span>
+                    <strong id="subtotal">₹0</strong>
+                </div>
+
+                <div class="summary-line">
+                    <span>Shipping</span>
+                    <strong id="shipping">₹0</strong>
+                </div>
+
+                <div class="summary-note">
+                    Free shipping on all orders above ₹5,000
+                </div>
+
+                <div class="summary-total">
+                    <span>TOTAL</span>
+                    <strong id="total">₹0</strong>
+                </div>
+
+                <a href="payment.html" class="checkout-button" id="checkout-button">
+                    <span>PROCEED TO CHECKOUT</span>
+                    <span>↗</span>
+                </a>
+
+                <p class="secure-note">
+                    SECURE ENCRYPTED CHECKOUT · 30-DAY EASY RETURNS
+                </p>
+            </aside>
+
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-brand">
+            <span>WOODLAND</span>
+            <p>STEP INTO THE WILD.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="products.html">Sneakers</a>
+            <a href="cart.html">Bag</a>
+            <a href="payment.html">Checkout</a>
+        </div>
+
+        <p class="copyright">
+            Academic Prototype · 2026
+        </p>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/cart.js"></script>
+    <script src="js/cart-page.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

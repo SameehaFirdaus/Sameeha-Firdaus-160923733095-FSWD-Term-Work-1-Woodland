@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Woodland</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/payment.css">
+</head>
+
+<body>
+
+    <!-- ================= MOBILE NAVIGATION ================= -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+    <aside class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="products.html" class="mobile-nav-link">Sneakers</a>
+            <a href="index.html#story" class="mobile-nav-link">Our Story</a>
+            <a href="index.html#explore" class="mobile-nav-link">Explore</a>
+            <a href="cart.html" class="mobile-nav-link">Your Bag</a>
+            <a href="payment.html" class="mobile-nav-link active">Checkout</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <p>Woodland Footwear · Est. 1992</p>
+        </div>
+    </aside>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">W</span>
+            <span class="brand-name">WOODLAND</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="products.html">SNEAKERS</a>
+            <a href="cart.html">BAG</a>
+            <a href="payment.html" class="active">CHECKOUT</a>
+        </nav>
+
+        <div class="nav-actions">
+            <span class="cart-link">
+                SECURE CHECKOUT
+            </span>
+
+            <button class="menu-button" id="menuButton" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- HERO -->
+        <section class="payment-hero">
+            <div class="payment-number">
+                04 / CHECKOUT
+            </div>
+
+            <div>
+                <p class="section-label">COMPLETE YOUR JOURNEY</p>
+                <h1>
+                    CHECK<br>
+                    <span>OUT.</span>
+                </h1>
+            </div>
+        </section>
+
+        <!-- CHECKOUT SECTION -->
+        <section class="checkout-section">
+
+            <!-- FORM AREA -->
+            <div class="checkout-form-area">
+                <form id="paymentForm" novalidate>
+
+                    <!-- STEP 01: CONTACT -->
+                    <div class="form-block">
+                        <div class="form-heading">
+                            <span>01</span>
+                            <div>
+                                <p class="section-label">CONTACT INFORMATION</p>
+                                <h2>WHO ARE YOU?</h2>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="fullName">FULL NAME *</label>
+                                <input type="text" id="fullName" placeholder="e.g. Liam Sterling" autocomplete="name">
+                                <small class="error-message"></small>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">EMAIL ADDRESS *</label>
+                                <input type="email" id="email" placeholder="liam@example.com" autocomplete="email">
+                                <small class="error-message"></small>
+                            </div>
+
+                            <div class="form-field full-width">
+                                <label for="phone">MOBILE PHONE NUMBER *</label>
+                                <input type="tel" id="phone" placeholder="10-digit mobile number" maxlength="10" autocomplete="tel">
+                                <small class="error-message"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 02: DELIVERY -->
+                    <div class="form-block">
+                        <div class="form-heading">
+                            <span>02</span>
+                            <div>
+                                <p class="section-label">SHIPPING DESTINATION</p>
+                                <h2>WHERE TO?</h2>
+                            </div>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-field full-width">
+                                <label for="address">STREET ADDRESS *</label>
+                                <input type="text" id="address" placeholder="Flat, House no., Building, Company, Apartment" autocomplete="street-address">
+                                <small class="error-message"></small>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="city">CITY / TOWN *</label>
+                                <input type="text" id="city" placeholder="e.g. Bangalore" autocomplete="address-level2">
+                                <small class="error-message"></small>
+                            </div>
+
+                            <div class="form-field">
+                                <label for="state">STATE / PROVINCE *</label>
+                                <input type="text" id="state" placeholder="e.g. Karnataka" autocomplete="address-level1">
+                                <small class="error-message"></small>
+                            </div>
+
+                            <div class="form-field full-width">
+                                <label for="pin">PIN CODE *</label>
+                                <input type="text" id="pin" placeholder="6-digit postal code" maxlength="6" autocomplete="postal-code">
+                                <small class="error-message"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- STEP 03: PAYMENT METHOD -->
+                    <div class="form-block">
+                        <div class="form-heading">
+                            <span>03</span>
+                            <div>
+                                <p class="section-label">PAYMENT METHOD</p>
+                                <h2>HOW WILL YOU PAY?</h2>
+                            </div>
+                        </div>
+
+                        <div class="payment-methods">
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="card" checked>
+                                <span class="radio-design"></span>
+                                <span>CREDIT / DEBIT CARD</span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="upi">
+                                <span class="radio-design"></span>
+                                <span>UPI PAYMENT</span>
+                            </label>
+
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="cod">
+                                <span class="radio-design"></span>
+                                <span>CASH ON DELIVERY</span>
+                            </label>
+                        </div>
+
+                        <!-- Card Details Panel -->
+                        <div class="card-details" id="cardDetails">
+                            <div class="form-grid">
+                                <div class="form-field full-width">
+                                    <label for="cardNumber">CARD NUMBER *</label>
+                                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" autocomplete="cc-number">
+                                    <small class="error-message"></small>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="expiry">EXPIRY DATE *</label>
+                                    <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" autocomplete="cc-exp">
+                                    <small class="error-message"></small>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="cvv">CVV / CVC *</label>
+                                    <input type="password" id="cvv" placeholder="•••" maxlength="3" autocomplete="cc-csc">
+                                    <small class="error-message"></small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UPI Details Panel -->
+                        <div class="upi-details" id="upiDetails">
+                            <div class="form-field">
+                                <label for="upiId">UPI VIRTUAL ADDRESS *</label>
+                                <input type="text" id="upiId" placeholder="username@okhdfcbank">
+                                <small class="error-message"></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SUBMIT BUTTON -->
+                    <button type="submit" class="place-order-button" id="submitOrderBtn">
+                        <span>COMPLETE ORDER & PAY</span>
+                        <span>↗</span>
+                    </button>
+
+                    <p class="form-security">
+                        🔒 256-BIT SSL ENCRYPTION · YOUR DATA IS STRICTLY PROTECTED
+                    </p>
+                </form>
+            </div>
+
+            <!-- ORDER SUMMARY ASIDE -->
+            <aside class="payment-summary">
+                <p class="section-label">YOUR SELECTION</p>
+                <h2>
+                    READY<br>
+                    TO ROAM.
+                </h2>
+
+                <div id="paymentItems">
+                    <!-- JavaScript dynamically inserts itemized products with thumbnails here -->
+                </div>
+
+                <div class="payment-summary-line">
+                    <span>Subtotal</span>
+                    <strong id="paymentSubtotal">₹0</strong>
+                </div>
+
+                <div class="payment-summary-line">
+                    <span>Shipping</span>
+                    <strong id="paymentShipping">FREE</strong>
+                </div>
+
+                <div class="payment-total">
+                    <span>TOTAL</span>
+                    <strong id="paymentTotal">₹0</strong>
+                </div>
+
+                <div class="checkout-message">
+                    Built for untamed wilderness.<br>
+                    Crafted for lifetime performance.
+                </div>
+            </aside>
+
+        </section>
+
+        <!-- SUCCESS SCREEN -->
+        <section class="success-screen" id="successScreen">
+            <div class="success-content">
+                <div class="success-symbol">✓</div>
+                <p class="section-label">ORDER CONFIRMED</p>
+                <h2>
+                    YOU'RE<br>
+                    <span>READY.</span>
+                </h2>
+                <p>
+                    Your Woodland expedition has officially begun. We'll send tracking information to your email as soon as your gear dispatches.
+                </p>
+                <a href="index.html" class="hero-button">
+                    <span>RETURN TO HOME</span>
+                    <span class="button-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-brand">
+            <span>WOODLAND</span>
+            <p>STEP INTO THE WILD.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="products.html">Sneakers</a>
+            <a href="cart.html">Bag</a>
+            <a href="payment.html">Checkout</a>
+        </div>
+
+        <p class="copyright">
+            Academic Prototype · 2026
+        </p>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/cart.js"></script>
+    <script src="js/payment.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers Collection | Woodland</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+
+<body>
+
+    <!-- ================= MOBILE NAVIGATION ================= -->
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+    <aside class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="products.html" class="mobile-nav-link active">Sneakers</a>
+            <a href="index.html#story" class="mobile-nav-link">Our Story</a>
+            <a href="index.html#explore" class="mobile-nav-link">Explore</a>
+            <a href="cart.html" class="mobile-nav-link">Your Bag</a>
+            <a href="payment.html" class="mobile-nav-link">Checkout</a>
+        </div>
+        <div class="mobile-nav-footer">
+            <p>Woodland Footwear · Est. 1992</p>
+        </div>
+    </aside>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">W</span>
+            <span class="brand-name">WOODLAND</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="products.html" class="active">SNEAKERS</a>
+            <a href="index.html#story">OUR STORY</a>
+            <a href="index.html#explore">EXPLORE</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="nav-icon" aria-label="Search">⌕</button>
+
+            <a href="cart.html" class="cart-link">
+                BAG
+                <span id="cart-count">0</span>
+            </a>
+
+            <button class="menu-button" id="menuButton" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+        <!-- HERO -->
+        <section class="products-hero">
+            <div class="products-number">
+                02 / COLLECTION
+            </div>
+
+            <div class="products-heading">
+                <p class="section-label">FOOTWEAR FOR THE WILD</p>
+                <h1>
+                    FIND YOUR<br>
+                    <span>GROUND.</span>
+                </h1>
+                <p class="products-intro">
+                    Explore footwear designed for movement, built for the outdoors and crafted for everyday life.
+                </p>
+            </div>
+
+            <div class="products-hero-word">
+                WOODLAND
+            </div>
+        </section>
+
+        <!-- FILTER -->
+        <section class="filter-section">
+            <div class="filter-label">
+                EXPLORE COLLECTION
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="trail">TRAIL</button>
+                <button class="filter-btn" data-filter="urban">URBAN</button>
+                <button class="filter-btn" data-filter="outdoor">OUTDOOR</button>
+            </div>
+
+            <div class="product-count">
+                <span id="visible-count">06</span> PRODUCTS
+            </div>
+        </section>
+
+        <!-- PRODUCTS GRID -->
+        <section class="products-grid" id="productsGrid">
+
+            <!-- PRODUCT 01 -->
+            <article class="product-card reveal-up" data-category="trail" data-id="1">
+                <div class="product-image">
+                    <span class="product-number">01</span>
+                    <img src="assets/images/sneaker-01.jpg" alt="Woodland Trail Runner" class="product-img">
+                    <button class="quick-add" onclick="addToCart(1)" aria-label="Add Trail Runner to bag">+</button>
+                    <div class="product-hover" onclick="addToCart(1)">
+                        ADD TO BAG <span>↗</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h2>TRAIL RUNNER</h2>
+                        <p>All Terrain / Outdoor</p>
+                    </div>
+                    <strong>₹6,495</strong>
+                </div>
+            </article>
+
+            <!-- PRODUCT 02 -->
+            <article class="product-card reveal-up" data-category="urban" data-id="2">
+                <div class="product-image">
+                    <span class="product-number">02</span>
+                    <img src="assets/images/sneaker-02.png" alt="Woodland Urban Trek" class="product-img">
+                    <button class="quick-add" onclick="addToCart(2)" aria-label="Add Urban Trek to bag">+</button>
+                    <div class="product-hover" onclick="addToCart(2)">
+                        ADD TO BAG <span>↗</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h2>URBAN TREK</h2>
+                        <p>Everyday / Street</p>
+                    </div>
+                    <strong>₹5,995</strong>
+                </div>
+            </article>
+
+            <!-- PRODUCT 03 -->
+            <article class="product-card reveal-up" data-category="outdoor" data-id="3">
+                <div class="product-image">
+                    <span class="product-number">03</span>
+                    <img src="assets/images/sneaker-03.png" alt="Woodland Wild Edge" class="product-img">
+                    <button class="quick-add" onclick="addToCart(3)" aria-label="Add Wild Edge to bag">+</button>
+                    <div class="product-hover" onclick="addToCart(3)">
+                        ADD TO BAG <span>↗</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h2>WILD EDGE</h2>
+                        <p>Adventure / Leather</p>
+                    </div>
+                    <strong>₹7,495</strong>
+                </div>
+            </article>
+
+            <!-- PRODUCT 04 -->
+            <article class="product-card reveal-up" data-category="trail" data-id="4">
+                <div class="product-image">
+                    <span class="product-number">04</span>
+                    <img src="assets/images/sneaker-04.jpg" alt="Woodland Ridge Walker" class="product-img">
+                    <button class="quick-add" onclick="addToCart(4)" aria-label="Add Ridge Walker to bag">+</button>
+                    <div class="product-hover" onclick="addToCart(4)">
+                        ADD TO BAG <span>↗</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h2>RIDGE WALKER</h2>
+                        <p>Trail / Performance</p>
+                    </div>
+                    <strong>₹6,995</strong>
+                </div>
+            </article>
+
+            <!-- PRODUCT 05 -->
+            <article class="product-card reveal-up" data-category="outdoor" data-id="5">
+                <div class="product-image">
+                    <span class="product-number">05</span>
+                    <img src="assets/images/sneaker-05.jpg" alt="Woodland Forest Low" class="product-img">
+                    <button class="quick-add" onclick="addToCart(5)" aria-label="Add Forest Low to bag">+</button>
+                    <div class="product-hover" onclick="addToCart(5)">
+                        ADD TO BAG <span>↗</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h2>FOREST LOW</h2>
+                        <p>Outdoor / Casual</p>
+                    </div>
+                    <strong>₹5,495</strong>
+                </div>
+            </article>
+
+            <!-- PRODUCT 06 -->
+            <article class="product-card reveal-up" data-category="urban" data-id="6">
+                <div class="product-image">
+                    <span class="product-number">06</span>
+                    <img src="assets/images/sneaker-06.jpg" alt="Woodland Street Trekker" class="product-img">
+                    <button class="quick-add" onclick="addToCart(6)" aria-label="Add Street Trekker to bag">+</button>
+                    <div class="product-hover" onclick="addToCart(6)">
+                        ADD TO BAG <span>↗</span>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <div>
+                        <h2>STREET TREKKER</h2>
+                        <p>Urban / Everyday</p>
+                    </div>
+                    <strong>₹6,295</strong>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="products-cta">
+            <p class="section-label">MADE TO MOVE</p>
+            <h2 class="reveal-up">
+                YOUR TRAIL<br>
+                <span>STARTS HERE.</span>
+            </h2>
+            <a href="cart.html" class="hero-button reveal-up">
+                <span>VIEW YOUR BAG</span>
+                <span class="button-arrow">↗</span>
+            </a>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-brand">
+            <span>WOODLAND</span>
+            <p>STEP INTO THE WILD.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="products.html">Sneakers</a>
+            <a href="cart.html">Bag</a>
+            <a href="payment.html">Checkout</a>
+        </div>
+
+        <p class="copyright">
+            Academic Prototype · 2026
+        </p>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

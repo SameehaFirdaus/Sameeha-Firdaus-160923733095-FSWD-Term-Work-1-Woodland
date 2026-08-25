@@ -1,0 +1,20 @@
+WOODLAND CINEMATIC HERO - QUICK INSTALL
+
+1. Copy commercial-hero.css into your project's css folder.
+2. Copy hero-commercial.js into your project's js folder.
+3. In index.html, add this AFTER animation.css/responsive.css:
+   <link rel="stylesheet" href="css/commercial-hero.css">
+4. Replace ONLY the existing <section class="hero"> ... </section> with the contents of hero-section.html.
+5. At the bottom of index.html, keep cart.js and main.js, and add:
+   <script src="js/hero-commercial.js"></script>
+6. Do NOT change products.html, cart.html, payment.html, cart.js, products.js, cart-page.js or payment.js.
+
+Required existing assets:
+assets/images/woodpecker-test.jpg
+assets/images/hippo-stampede.jpg
+assets/images/eagle-strike.jpg
+assets/images/forest-trail.png
+assets/images/forest-wild.png
+assets/images/sneaker-02.png
+
+The hero auto-plays 5 scenes, has scene controls, responsive layout, cinematic overlays, impact shake, and no white image-card styling.
